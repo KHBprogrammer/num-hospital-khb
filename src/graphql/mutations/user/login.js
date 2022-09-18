@@ -12,7 +12,7 @@ module.exports = async (parent, args, context, info) => {
 		if (!isMatch) throw new UserInputError('incorrect.password');
 		else {
 			const token = generateTokenFromUser(user);
-			return token;
+			return { token };
 		}
 	}
 };
