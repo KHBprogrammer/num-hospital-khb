@@ -1,0 +1,43 @@
+{
+  "name": "num-hospital-khb",
+  "version": "1.0.0",
+  "description": "made in khb from num",
+  "main": "./src/index.js",
+  "author": "KHB",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=PRODUCTION node app.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^8.0.1",
+    "apollo-server-express": "^2.22.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-subscriptions": "^1.2.1",
+    "graphql-upload": "^12.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.2",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KHBprogrammer/num-hospital-khb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KHBprogrammer/num-hospital-khb/issues"
+  },
+  "homepage": "https://github.com/KHBprogrammer/num-hospital-khb#readme"
+}
