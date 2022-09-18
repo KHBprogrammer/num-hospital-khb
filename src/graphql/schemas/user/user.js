@@ -31,7 +31,6 @@ const userSchema = gql`
 		first_name: String
 		gender: String
 		last_name: String
-		password: String
 		reg_no: String
 		role: String
 	}

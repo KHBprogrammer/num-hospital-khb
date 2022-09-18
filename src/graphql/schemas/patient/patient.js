@@ -3,7 +3,7 @@ const { gql } = require('apollo-server-express');
 const patientSchema = gql`
 	extend type Query {
 		patients: [Patient]
-		patientDetail(_id: ID!): Patient
+		patientDetail(_id: ID, reg_no: String, sisi: String): Patient
 	}
 
 	extend type Mutation {

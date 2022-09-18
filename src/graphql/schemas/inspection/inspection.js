@@ -2,7 +2,12 @@ const { gql } = require('apollo-server-express');
 
 const inspectionSchema = gql`
 	extend type Query {
-		inspections: [Inspection]
+		inspections(
+			dateBegin: Date
+			dateEnd: Date
+			reg_no: String
+			user: ID
+		): [Inspection]
 		inspectionDetail(_id: ID!): Inspection
 	}
 
