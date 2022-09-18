@@ -15,7 +15,7 @@ const inspectionSchema = gql`
 			desease: String
 			desease_reason: String
 			inspection: String
-			lost_count: Number
+			lost_count: Float
 			main_diagnosis: String
 			note: String
 			procedures: String
@@ -35,7 +35,7 @@ const inspectionSchema = gql`
 			desease: String
 			desease_reason: String
 			inspection: String
-			lost_count: Number
+			lost_count: Float
 			main_diagnosis: String
 			note: String
 			procedures: String
@@ -58,7 +58,7 @@ const inspectionSchema = gql`
 		desease: String
 		desease_reason: String
 		inspection: String
-		lost_count: Number
+		lost_count: Float
 		main_diagnosis: String
 		note: String
 		procedures: String

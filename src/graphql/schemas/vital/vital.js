@@ -10,25 +10,25 @@ const vitalSchema = gql`
 		createVital(
 			created_at: Date
 			blood_pressure: String
-			blood_suggar: Number
+			blood_suggar: Float
 			heart_sugar: String
-			heart_rate: Number
-			oxygen_saturaion: Number
+			heart_rate: Float
+			oxygen_saturaion: Float
 			respiration: String
-			temperature: Number
-			pulse: Number
-			breath: Number
-			person_height: Number
-			person_weight: Number
+			temperature: Float
+			pulse: Float
+			breath: Float
+			person_height: Float
+			person_weight: Float
 			pressure_left_additional: String
-			pressure_left_average: Number
-			pressure_left_deed: Number
-			pressure_left_dood: Number
+			pressure_left_average: Float
+			pressure_left_deed: Float
+			pressure_left_dood: Float
 			pressure_right_additional: String
-			pressure_right_average: Number
-			pressure_right_deed: Number
-			pressure_right_dood: Number
-			saturation: Number
+			pressure_right_average: Float
+			pressure_right_deed: Float
+			pressure_right_dood: Float
+			saturation: Float
 			uhaan_sanaa: String
 		): Vital
 
@@ -36,25 +36,25 @@ const vitalSchema = gql`
 			_id: ID!
 			created_at: Date
 			blood_pressure: String
-			blood_suggar: Number
+			blood_suggar: Float
 			heart_sugar: String
-			heart_rate: Number
-			oxygen_saturaion: Number
+			heart_rate: Float
+			oxygen_saturaion: Float
 			respiration: String
-			temperature: Number
-			pulse: Number
-			breath: Number
-			person_height: Number
-			person_weight: Number
+			temperature: Float
+			pulse: Float
+			breath: Float
+			person_height: Float
+			person_weight: Float
 			pressure_left_additional: String
-			pressure_left_average: Number
-			pressure_left_deed: Number
-			pressure_left_dood: Number
+			pressure_left_average: Float
+			pressure_left_deed: Float
+			pressure_left_dood: Float
 			pressure_right_additional: String
-			pressure_right_average: Number
-			pressure_right_deed: Number
-			pressure_right_dood: Number
-			saturation: Number
+			pressure_right_average: Float
+			pressure_right_deed: Float
+			pressure_right_dood: Float
+			saturation: Float
 			uhaan_sanaa: String
 		): Vital
 
@@ -65,25 +65,25 @@ const vitalSchema = gql`
 		_id: ID
 		created_at: Date
 		blood_pressure: String
-		blood_suggar: Number
+		blood_suggar: Float
 		heart_sugar: String
-		heart_rate: Number
-		oxygen_saturaion: Number
+		heart_rate: Float
+		oxygen_saturaion: Float
 		respiration: String
-		temperature: Number
-		pulse: Number
-		breath: Number
-		person_height: Number
-		person_weight: Number
+		temperature: Float
+		pulse: Float
+		breath: Float
+		person_height: Float
+		person_weight: Float
 		pressure_left_additional: String
-		pressure_left_average: Number
-		pressure_left_deed: Number
-		pressure_left_dood: Number
+		pressure_left_average: Float
+		pressure_left_deed: Float
+		pressure_left_dood: Float
 		pressure_right_additional: String
-		pressure_right_average: Number
-		pressure_right_deed: Number
-		pressure_right_dood: Number
-		saturation: Number
+		pressure_right_average: Float
+		pressure_right_deed: Float
+		pressure_right_dood: Float
+		saturation: Float
 		uhaan_sanaa: String
 	}
 `;
