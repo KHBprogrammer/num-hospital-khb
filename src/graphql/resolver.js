@@ -1,12 +1,16 @@
-const { merge } = require("lodash");
+const { merge } = require('lodash');
+const {
+	patientSchema,
+	patientResolvers,
+} = require('./schemas/patient/patient');
 
-const { userSchema, userResolvers } = require("./schemas/user/user");
+const { userSchema, userResolvers } = require('./schemas/user/user');
 
-const schemas = [userSchema];
+const schemas = [userSchema, patientSchema];
 
-const resolvers = merge(userResolvers);
+const resolvers = merge(userResolvers, patientResolvers);
 
 module.exports = {
-  schemas,
-  resolvers,
+	schemas,
+	resolvers,
 };
