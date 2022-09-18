@@ -20,7 +20,7 @@ const userSchema = gql`
 		): User
 		updateUser(_id: ID!): User
 		deleteUser(_id: ID): ID
-		login(username: String!, password: String!): Token
+		login(username: String!, password: String!): String
 	}
 
 	type User {
@@ -34,9 +34,6 @@ const userSchema = gql`
 		password: String
 		reg_no: String
 		role: String
-	}
-	type Token {
-		token: String
 	}
 `;
 
