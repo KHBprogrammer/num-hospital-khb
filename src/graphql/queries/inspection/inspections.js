@@ -17,6 +17,9 @@ module.exports = async (parent, args, context, info) => {
 			  }
 			: {};
 
-	const inspection = await Inspection.find({ ...args, ...dateFilter });
+	const inspection = await Inspection.find({ ...args, ...dateFilter }).populate(
+		'user patient'
+	);
+
 	return inspection;
 };
