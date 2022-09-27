@@ -11,7 +11,7 @@ const { apolloServer } = require("./graphql/apollo/apolloServer");
 
 const options = {
   key: DEV ? "" : fs.readFileSync(""),
-  cert: DEV ? "" : fs.readFileSync(""),
+  cert: DEV ? "" : fs.readFileSync("")
 };
 
 // parse application/x-www-form-urlencoded
@@ -24,7 +24,7 @@ mongoose.connect(DB_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
+  useFindAndModify: false
 });
 if (DEV) {
   mongoose.set("debug", true);
@@ -42,9 +42,10 @@ httpServer.listen(PORT, () => {
   console.log("------------------Backend------------------");
   console.log("devmode: " + DEV);
   console.log(`Port: ${PORT}`);
+  console.log(`graphql address: http://localhost:${PORT}/graphql`);
   console.log(
     `Date: ${new Date().toLocaleString("mn-MN", {
-      timeZone: "Asia/Ulaanbaatar",
+      timeZone: "Asia/Ulaanbaatar"
     })}`
   );
   console.log(`Env: ${process.env.NODE_ENV}`);
