@@ -40,8 +40,8 @@ const inspectionSchema = gql`
       note: String
       procedures: String
       question: String
-      sent: String
-      violence: String
+      sent: Boolean
+      violence: Boolean
       patient: ID
       user: ID
     ): Inspection
@@ -63,8 +63,8 @@ const inspectionSchema = gql`
     note: String
     procedures: String
     question: String
-    sent: String
-    violence: String
+    sent: Boolean
+    violence: Boolean
     patient: Patient
     user: User
   }
